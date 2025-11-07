@@ -1,0 +1,63 @@
+.cardNotificationPhone{
+
+    .notification-phone{
+        background-color: #F5F0ED;
+        border-radius: 30px;
+        height: 70vh;
+        width: 390px;
+
+        .container-notification{
+            padding-top: 90px;
+
+            .img-notification{
+                width: 90px;
+            }
+
+            .title-notification{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 41.2512px;
+                line-height: 49px;
+                text-align: center;
+                color: #333333;
+            }
+
+            .section-text{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .context-phone{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 26px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                width: 183px;
+                margin-left: 5.5rem;
+                color: #333333;
+            }
+
+            .btn-notification{
+                background-color: #F9A823;
+                font-size: 1.3em;
+                font-weight: 700;
+                width: 223px !important;
+                height: 56px;
+                border-radius: 37px;
+
+                .text-button-notification{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+    }
+}

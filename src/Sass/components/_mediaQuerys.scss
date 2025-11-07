@@ -1,0 +1,1669 @@
+//pantalla para mobile
+@media screen and (max-width: 767px) {
+
+    .iconCategories {
+
+        &__icon-svg {
+            position: absolute !important;
+            margin-right: 22rem;
+        }
+    }
+
+    .text-eat-barr{
+        padding-left: 10px !important;
+    }
+
+    .btn-snak-container{
+        margin-right: 3rem !important;
+    }
+
+    // button categories
+
+    .text-categories-phone{
+        position: absolute !important;
+        top: 18rem !important;
+    }
+    
+    .buttonCategoriesPhone .text-photo-phone{
+        position: absolute !important;
+        top: 18rem !important;
+    }
+
+    .buttonCategoriesPhone .text-eat-phone{
+        position: absolute !important;
+        top: 23.5rem;
+    }
+
+    .buttonCategoriesPhone .text-amb-phone{
+        position: absolute !important;
+        top: 23.5rem;
+    }
+
+    .buttonCategoriesPhone .text-dom-phone{
+        position: absolute !important;
+        top: 29rem;
+    }
+
+    // end button categories
+
+    .caruselServices .slick-prev::before {
+        display: none !important;
+    }
+
+    .iconRightValid svg {
+        margin-left: .6rem !important;
+    }
+
+    //menu logo
+    .logo-menu {
+        display: none !important;
+    }
+
+    //menu btn collapse
+    .btn-collapse {
+        margin-right: 10px !important;
+    }
+
+    .main-phone-log {
+        margin: 0 !important;
+        display: block !important;
+    }
+
+    // Carousel
+    .container-carousel-phone {
+        width: 80% !important;
+    }
+
+    .sectionCard {
+        &__btn-plus {
+            margin-left: 0px !important;
+            margin-top: 15px !important;
+        }
+    }
+
+    //icono validation session
+    .iconRightValid svg {
+        margin-left: 2rem !important;
+    }
+
+    //Session phone
+    .cardSession {
+        border-radius: 0px !important;
+        background-color: #F5F0ED !important;
+        height: 100% !important;
+        width: 100% !important;
+
+        .padding-phone {
+            padding-bottom: 3rem !important;
+        }
+
+        .input-wrapper .input {
+            font-style: normal !important;
+            font-weight: 300 !important;
+            font-size: 14px !important;
+            line-height: 20px !important;
+            color: #333333 !important;
+            padding-left: 3rem !important;
+        }
+
+        ::placeholder {
+            padding-left: 2rem !important;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 20px;
+
+            color: #736E6E;
+
+        }
+
+        .recovery-count {
+            font-size: .7em;
+        }
+
+        .container-phone {
+            background-color: #F5F0ED;
+            border-radius: 0px !important;
+            width: 390px !important;
+            height: 844px !important;
+
+            .log-phone {
+                margin-top: 5rem !important;
+            }
+
+            .title-session {
+                margin-top: 1rem !important;
+                padding: 0 !important;
+                justify-content: center;
+            }
+
+            .btn-session {
+                width: 300px;
+                height: 56px;
+
+            }
+
+            .container-btns {
+                display: flex;
+                margin-left: 10px;
+                justify-content: center;
+                margin-top: 10px !important;
+
+                .btn-google {
+                    width: 290px !important;
+                    height: 52px !important;
+                    background-color: white;
+                    text-align: start;
+
+                    .a-btn {
+                        position: absolute;
+                    }
+
+                    .img-btn {
+                        display: flex !important;
+                        height: 25px !important;
+                        width: 25px !important;
+                        margin-top: 14px !important;
+                    }
+
+                    .session-text {
+                        font-style: normal !important;
+                        font-weight: 300 !important;
+                        font-size: 17px !important;
+                        line-height: 20px !important;
+                        color: #333333 !important;
+                        margin-top: 18px !important;
+                        margin-left: .7rem !important;
+                    }
+                }
+
+                .btn-facebook {
+                    width: 290px;
+                    height: 45px;
+                    background-color: white;
+                    text-align: start;
+
+                    .a-btn {
+                        position: absolute;
+                    }
+
+                    .img-btn {
+                        display: flex !important;
+                        height: 25px !important;
+                        width: 25px !important;
+                        margin-top: 14px !important;
+                    }
+
+                    .session-text {
+                        font-style: normal !important;
+                        font-weight: 300 !important;
+                        font-size: 17px !important;
+                        line-height: 20px !important;
+                        color: #333333 !important;
+                        margin-top: 18px !important;
+                        margin-left: .7rem !important;
+                    }
+                }
+            }
+
+
+        }
+
+        .reg-session-phone {
+            background-color: #F5F0ED;
+            width: 100% !important;
+            margin-top: 5rem !important;
+            border-radius: 0 !important;
+        }
+    }
+
+    .cardSessionValid {
+        border-radius: 0 !important;
+        width: 390px;
+        height: 100%;
+
+        .container-phone-valid {
+            margin-top: 8rem !important;
+
+
+            .log-valid-phone {
+                margin-bottom: 3rem !important;
+            }
+
+            .title-valid {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 33px;
+                line-height: 39px;
+                display: flex !important;
+                margin-left: 2.5rem !important;
+                text-align: center;
+                color: #333333;
+
+            }
+
+            .title-valid-phone {
+                width: 80% !important;
+            }
+
+            .input-wrapper .input {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 17px;
+                line-height: 20px !important;
+                padding-left: 3.6rem !important;
+            }
+
+            .icon-left-session {
+                position: absolute !important;
+                margin-top: 40px !important;
+            }
+
+            .input-password-phone {
+                margin-top: 1rem !important;
+            }
+
+            .view-password-session {
+                position: absolute !important;
+                margin-top: 28px !important;
+                left: 16.3rem !important;
+            }
+
+            .recovery-count {
+                font-size: .7em;
+            }
+
+            .title-phone {
+                font-size: 1em !important;
+            }
+
+            .reg-session-phone {
+                margin-top: 6rem !important;
+            }
+
+
+        }
+
+        .cardSessionValid {
+            border-radius: 0 !important;
+            width: 100%;
+            height: 100%;
+
+            .container-phone-valid {
+                margin-top: 8rem !important;
+                padding-left: 2.5rem !important;
+                padding-right: 2.5rem !important;
+
+                .log-valid-phone {
+                    margin-bottom: 3rem !important;
+                }
+
+                .title-valid {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 33px;
+                    line-height: 39px;
+                    display: flex !important;
+                    margin-left: 2.5rem !important;
+                    text-align: center;
+                    color: #333333;
+
+                }
+
+                .title-valid-phone {
+                    width: 80% !important;
+                }
+
+                .input-wrapper .input {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 17px;
+                    line-height: 20px !important;
+                    padding-left: 3.6rem !important;
+                }
+
+                .icon-left-session {
+                    position: absolute !important;
+                    margin-top: 32px !important;
+                }
+
+                .input-password-phone {
+                    margin-top: 1rem !important;
+                }
+
+                .view-password-session {
+                    position: absolute !important;
+                    margin-top: 20px !important;
+                    left: 16.5rem !important;
+                }
+
+                .recovery-count {
+                    font-size: .7em;
+                }
+
+                .title-phone {
+                    font-size: 1em !important;
+                }
+
+                .reg-session-phone {
+                    margin-top: 6rem !important;
+                }
+
+
+            }
+
+        }
+
+        .input-wrapper .iconRightValid svg {
+            margin-left: 2rem;
+        }
+
+        .title-phone {
+            margin-top: 8rem !important;
+        }
+
+        .reg-session-phone {
+            margin-top: 5rem !important;
+        }
+
+        .view-password-register {
+            position: absolute;
+            left: 16rem !important;
+        }
+
+        .reg-session-phone {
+            margin-top: 10rem !important;
+        }
+    }
+
+    .view-password-session {
+        position: absolute;
+        margin-top: 20px !important;
+        left: 13rem !important;
+    }
+
+    .view-password-session-web {
+        position: absolute !important;
+        margin-top: 15px !important;
+        left: 13rem !important;
+    }
+
+    //End session phone
+
+    //Session  
+    .cardSessionRegister {
+        width: 390px;
+
+        .view-password-register {
+            position: absolute;
+            left: 15rem !important;
+        }
+    }
+
+    .cardSessionRecovery {
+        border-radius: 0 !important;
+        width: 100%;
+        height: 100%;
+
+        .btn-close-session {
+            position: absolute;
+            right: 1px;
+            left: 20rem !important;
+            bottom: 2.2rem;
+        }
+
+        .title-phone {
+            padding-top: 5rem !important;
+
+            .title-phone-row {
+                display: block;
+                margin-left: 6rem !important;
+                margin-bottom: 2.5rem !important;
+                width: 150px !important;
+            }
+        }
+
+        .input-wrapper .input {
+            padding-left: 1rem !important;
+            font-size: 13px !important;
+        }
+
+        .input-wrapper .iconRight svg {
+            left: 12rem !important;
+        }
+
+        .btn-phone-ini {
+            width: 219px !important;
+            height: 44px;
+        }
+
+
+    }
+
+    .cardSessionNewPassword {
+        background-color: #f9f9f9;
+        width: 100% !important;
+
+        .container-NewPassword {
+            border-radius: 0px !important;
+            background-color: #F5F0ED;
+            padding: 3rem;
+            width: 100% !important;
+            height: 100vh !important;
+        }
+
+        .icon-new-password{
+            position: absolute !important;
+            right: 4.5rem !important;
+            margin-top: 0%;
+            padding-bottom: 8px !important;
+        }
+
+        .text-sm-start {
+            font-size: .9em;
+        }
+
+    }
+
+    .cardRegister {
+        background-color: #f5eded;
+        height: 100% !important;
+        overflow: none !important;
+
+        .container-register {
+            overflow: hidden !important;
+            background-color: #f5eded;
+            border-radius: 20px;
+            width: 390px !important;
+            height: 100% !important;
+
+            .container-phone-spacing {
+                margin-top: 5rem;
+
+                .container-btns {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 10px;
+
+                    .btn-google {
+                        width: 290px;
+                        height: 52px;
+                        background-color: white;
+                        text-align: start;
+
+                        .a-btn {
+                            position: absolute;
+                        }
+
+                        .img-btn {
+                            display: flex !important;
+                            height: 25px !important;
+                            width: 25px !important;
+                            margin-top: 14px !important;
+                        }
+
+                        .session-text {
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 17px;
+                            line-height: 20px;
+                            color: #333333;
+                            margin-top: 18px !important;
+                            margin-left: .7rem !important;
+                        }
+                    }
+                }
+
+                .text-terminos {
+                    margin-top: 11rem !important;
+                }
+
+                .reg-session-phone {
+                    margin-top: 2rem !important;
+                }
+            }
+
+
+
+        }
+    }
+
+    .cardRegisterVerify {
+        background-color: #F5F0ED !important;
+
+        .verify-valid {
+            width: 390px;
+            height: 100%;
+
+            .verify-spacing-top {
+                margin-top: 10rem !important;
+            }
+
+            .img,
+            svg {
+                width: 230px !important;
+                height: 180px !important;
+            }
+
+        }
+
+        .title-verify {
+            margin-top: 3rem !important;
+        }
+
+        .border-web {
+            background-color: transparent !important;
+            width: 350px;
+            border-radius: 10px;
+            border: none !important;
+
+            .mesagge-card {
+                font-size: 1em;
+                list-style: none;
+                letter-spacing: none;
+                line-height: none;
+            }
+
+            .info-card {
+                background-color: #F9F7F5;
+                border-radius: 5px;
+                border: 1px solid #736E6E;
+                display: flex;
+                color: #736E6E;
+                font-size: .8em;
+                padding: 12px;
+            }
+        }
+
+        .chronometer-phone {
+            margin-top: 2rem !important;
+
+            .chronometer-verify {
+                font-size: 5rem !important;
+            }
+        }
+
+        .section-phone {
+            margin-top: 5rem !important;
+        }
+    }
+
+    .cardRegisterConfirm {
+        .section-border {
+            background-color: transparent !important;
+            border: 0 !important;
+
+            .section-card {
+                font-size: 1.1em;
+                font-weight: 450;
+            }
+        }
+    }
+
+    //End card register
+
+    //Card Valid register
+    .cardRegisterValid {
+        width: 390px;
+        height: 100% !important;
+        border-radius: 0px !important;
+
+        .logo-valid {
+            display: flex !important;
+            justify-content: center;
+            padding-top: 3rem !important;
+        }
+
+        .input-wrapper .iconRight svg {
+            position: absolute;
+            left: 15rem !important;
+        }
+
+        .input-wrapper .input {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 20px !important;
+            padding-left: 3.6rem !important;
+        }
+
+        .icon-left-session {
+            position: absolute !important;
+            margin-top: 32px !important;
+        }
+
+        .view-password-session {
+            margin-left: 1.8rem !important;
+        }
+
+        .view-password-session-web {
+            margin-top: 14px !important;
+            margin-left: 1.8rem !important;
+        }
+
+        .input-phone {
+            margin-bottom: 5px !important;
+        }
+
+        .button-phone {
+            margin-top: 2rem !important;
+        }
+
+        .text-terminos-phone {
+            margin-top: 10rem !important;
+        }
+
+        .reg-session-phone {
+            margin-top: 2rem !important;
+        }
+    }
+
+    //End Valid register
+
+    //card register confirm 
+    .cardRegisterConfirm {
+        .register-confirm {
+            .section-border {
+                background-color: transparent;
+                border: 1px solid transparent;
+                border-radius: 10px;
+
+                .section-card {
+                    font-size: 0.9em;
+                    font-weight: 450;
+                }
+            }
+        }
+    }
+
+    //View-password register phone
+    .view-password-phone {
+        position: absolute;
+        left: 14rem !important;
+        margin-top: 1rem;
+    }
+
+    //View-password new password web
+    .view-password-new {
+        position: absolute;
+        left: 10rem !important;
+    }
+
+    //Check email
+    .iconRightValid svg {
+        left: 14.2rem;
+    }
+
+    //card Notification
+    .notification-phone {
+        background-color: #F4D199 !important;
+        border-radius: 30px;
+        width: 292px !important;
+        height: 286px !important;
+
+        .container-notification {
+            padding-top: 20px !important;
+
+            .log-phone {
+                display: none !important;
+            }
+
+            .notification-img {
+                display: none;
+            }
+
+            .section-text {
+                margin-top: 0px !important;
+                margin-bottom: 0px !important;
+            }
+
+            .context-phone {
+                width: 164px !important;
+                font-style: normal !important;
+                font-weight: 400 !important;
+                font-size: 23px !important;
+                line-height: 26px !important;
+                margin-left: 50px !important;
+                color: #333333 !important;
+            }
+
+            .btn-notification {
+                width: 223px !important;
+                height: 56px !important;
+                background: #F5F0ED !important;
+                border-radius: 37px !important;
+
+                .text-button-notification {
+                    font-style: normal !important;
+                    font-weight: 400 !important;
+                    font-size: 20px !important;
+                    line-height: 24px !important;
+                    text-align: center !important;
+                    color: #5726F9 !important;
+                }
+            }
+        }
+
+    }
+
+    .context-phone {
+        word-spacing: -0.1em;
+        font-weight: 350;
+    }
+
+    //Card notification Oops
+    .cardNotification-oops {
+        background-color: #F5F0ED;
+        width: 100vh;
+        height: 100vh;
+
+        .notification-oops {
+            background-color: #F5F0ED;
+            border-radius: 0px;
+            width: 390px;
+            height: 100vh;
+
+            .log-ops{
+                padding-top: 2rem;
+            }
+
+            .container-notification {
+                margin-left: 1rem;
+                padding-top: 160px;
+                width: 350px;
+
+                .section-btn {
+                    justify-content: center;
+                    display: flex;
+                }
+
+                .btn-notification {
+                    background-color: #DCD5F0;
+                    color: #000;
+                    font-size: 1.3em;
+                    font-weight: 300;
+                    width: 150px;
+                }
+            }
+
+        }
+    }
+
+    //Profile Img 
+    .profileImg {
+        .content-img-profile {
+            width: 318px;
+            height: 660px;
+
+            .containerImg {
+                width: 310px !important;
+
+                .title-img-phone {
+                    margin: 0 !important;
+                    margin-top: 20px !important;
+                    margin-bottom: 10px !important;
+                    font-size: 20px !important;
+                }
+
+                .img-phone {
+                    margin-top: 20px !important;
+                }
+            }
+
+            .section-profile {
+                padding: 10px !important;
+
+                .text-profile-tittle {
+                    font-style: normal !important;
+                    font-weight: 300 !important;
+                    font-size: 19px !important;
+                    color: #736E6E;
+                }
+            }
+
+            .line-web {
+                display: none !important;
+            }
+
+            .line-phone {
+                border-bottom: 5px solid #fff;
+            }
+
+            .container-profile-phone {
+                padding: 20px !important;
+                display: inline-block !important;
+
+                .data-phone-profile {
+                    margin: 0 !important;
+                    margin-top: 18rem !important;
+                    padding-left: 3rem !important;
+                    padding: 0 !important;
+                }
+
+                .containerImg .imgWithData {
+                    border-radius: 50%;
+                    width: 141px !important;
+                    height: 141px !important;
+                }
+
+                .spacing-phone {
+                    padding-top: 10px !important;
+                }
+
+                .input-phone {
+                    width: 14rem !important;
+                    height: 54px !important;
+                    border-radius: 23px !important;
+                }
+            }
+
+            .button-profile {
+                margin-top: 1.5rem;
+                width: 300px !important;
+            }
+
+            .more {
+                position: absolute;
+                left: 11rem;
+                bottom: 3rem;
+                color: #fff;
+                height: 2.8rem;
+                width: 2.8rem;
+            }
+
+            .btn-phone-valid {
+                margin-bottom: 3rem !important;
+            }
+        }
+
+    }
+
+    //Card product
+    .cardProduct {
+        width: 100% !important;
+        height: 450px;
+    }
+
+    //Main-nav, input search, services, log
+    .main-responsive {
+        padding: 0;
+
+        //Input-search
+        .input-search {
+            padding: 0;
+            margin-top: 1rem;
+            width: 280px;
+
+            ::placeholder {
+                font-size: .9em;
+                margin-top: 5px;
+                position: absolute;
+                right: 4rem;
+            }
+
+        }
+
+        //Services, icon
+        .main-spacing-responsive {
+            flex-wrap: wrap;
+            margin-top: 1rem;
+            width: 280px;
+
+            .icon-briefcase {
+                font-size: 1.8em;
+            }
+
+            .services-section {
+                margin-top: 1rem;
+                margin-bottom: 10px;
+            }
+        }
+
+        //btn log
+        .main-loggin-responsive {
+            margin: 0 !important;
+            width: 280px;
+            display: flex;
+            justify-content: center;
+
+            .btn-log {
+                margin-bottom: 1rem;
+            }
+        }
+
+    }
+
+    // Buttoncategories
+    .buttonCategories {
+        width: 250px;
+
+        .btn-categories {
+            border: 0;
+            background-color: transparent;
+            width: 390px;
+
+        }
+    }
+
+
+    //Card product 
+    .container-product {
+        justify-content: center;
+        width: 380px;
+    }
+
+    .cardProduct {
+        width: 375px;
+
+        .price-product {
+            font-size: .9em;
+        }
+    }
+
+    //menu
+    .register-phone {
+        text-align: center !important;
+        display: flex;
+        margin-bottom: 1rem !important;
+        margin-top: 1rem !important;
+    }
+
+    .log-phone {
+        margin-bottom: 1rem !important;
+    }
+
+    //Menu2
+    .logo-menu2-phone {
+        margin: 15px !important;
+    }
+
+    //btn menu2
+    .services-section {
+        .btn-service {
+            width: 200px !important;
+        }
+    }
+
+    .seccion-main {
+        display: none !important;
+    }
+
+    .seccion-d-none {
+        display: none !important;
+    }
+
+    .icon-briefcase-phone {
+        display: none !important;
+
+        .btn-services-menu2 {
+            display: none !important;
+        }
+    }
+
+    // eat category
+
+    .eatCategory {
+        .img-eat-barr {
+            display: none !important;
+        }
+
+        .img-eat-barra-phone {
+            width: 350px !important;
+            height: 165px !important;
+        }
+
+        .text-eat-barr{
+            margin: 0% !important;
+            margin-left: 20px !important;
+            margin-bottom: 30px !important;
+            text-align: start !important;
+        }
+
+        .btn-snak-container{
+            padding: 0% !important;
+            width: 210px !important;
+            margin-left: 60px !important;
+            .btn-snack {
+                width: 400px !important;
+            }
+        }
+
+        
+    }
+
+    .container-eat-phone {
+        display: inline-block !important;
+
+        .border-eatcategory {
+            margin-bottom: 2rem !important;
+            width: 350px !important;
+        }
+
+        
+    }
+
+}
+
+//pantalla para tablet
+@media screen and (min-width: 767px) and (max-width: 1000px) {
+
+    //eat category
+    .img-eat-barra-phone {
+        display: none !important;
+    }
+
+    .btn-services-menu2 {
+        margin-left: 3rem !important;
+
+    }
+
+    .main-phone-log {
+        margin: 0 !important;
+        display: block !important;
+    }
+
+    //categories
+    .buttonCategoriesPhone {
+        .margin-tablet {
+            margin: 3rem !important;
+
+            .container-tablet {
+                display: flex !important;
+            }
+        }
+
+    }
+
+    //menu btn collapse
+    .btn-collapse {
+        margin-right: 50px !important;
+    }
+
+    //Card Register 
+    .cardRegister {
+
+        .btn-close-register {
+            display: none;
+        }
+
+        .log-disabled-web {
+            display: none;
+        }
+
+        .session-text {
+            display: none;
+        }
+    }
+
+    //card register valid
+    .cardRegisterValid {
+        .btn-close-register {
+            display: none;
+        }
+
+        .view-password-session {
+            position: absolute !important;
+            margin-top: 20px !important;
+            left: 15.5rem !important;
+        }
+
+        .icon-left-session {
+            display: none !important;
+        }
+
+        .view-password-session-web {
+            position: absolute !important;
+            margin-top: 12px !important;
+            left: 15.5rem !important;
+        }
+
+    }
+
+    //Card Session 
+    .cardSession {
+        width: 450px;
+
+        .session-text {
+            display: none;
+        }
+
+        .btn-close-session {
+            display: none;
+        }
+
+        .input-wrapper .input {
+            font-size: 14px;
+        }
+    }
+
+    .cardSessionPassword {
+        .btn-close-session {
+            display: none !important;
+        }
+
+        .view-password-register {
+            position: absolute;
+            left: 16rem !important;
+        }
+    }
+
+    // session password valid
+    .cardSessionValid {
+        .btn-close-session {
+            display: none !important;
+        }
+
+        .icon-left-session {
+            display: none !important;
+        }
+
+        .view-password-session {
+            position: absolute !important;
+            margin-top: 20px !important;
+            left: 17.5rem !important;
+        }
+    }
+
+    //card session valid
+    .log-valid-phone {
+        display: none !important;
+    }
+
+    .cardSessionRecovery {
+
+        .btn-close-session {
+            display: none;
+        }
+
+        .btn-phone-white {
+            display: none !important;
+        }
+
+        .svg-phone {
+            margin-top: 7rem !important;
+        }
+    }
+
+
+    .register-phone {
+        text-align: center !important;
+        display: flex;
+        margin-bottom: 1rem !important;
+        margin-top: 1rem !important;
+    }
+
+    .log-phone {
+        margin-bottom: 1rem !important;
+    }
+
+    //menu2
+    .img-responsive {
+        display: none;
+    }
+
+    .seccion-main {
+        display: none !important;
+    }
+
+    .btn-services-menu2 {
+        display: none !important;
+    }
+
+    //display none
+    .seccion-d-none {
+        display: none !important;
+    }
+
+    //btn menu2
+    .services-section {
+        margin-right: 8rem !important;
+
+        .btn-service {
+            width: 280px !important;
+        }
+    }
+
+    .img-tablet {
+        margin-right: 1rem !important;
+    }
+
+    //logo 2 phone
+    .logo-menu2-phone {
+        display: none !important;
+    }
+
+    //View-password phone
+    .view-password {
+        left: 17rem;
+    }
+
+    .cardSessionNewPassword {
+        .view-password-new {
+            position: absolute;
+            left: 15rem !important;
+        }
+    }
+
+    //btn categories
+    .buttonCategories {
+        display: none !important;
+    }
+
+}
+
+//Pantalla para pc
+@media screen and (min-width:1000px) {
+
+    //eat category
+    .img-eat-barra-phone {
+        display: none !important;
+    }
+
+    //eat category
+    .img-eat-barra-phone {
+        display: none !important;
+    }
+
+    //menu
+    .alt-nav {
+        height: 96px !important;
+    }
+
+    .icon-briefcase {
+        :hover {
+            cursor: pointer;
+            filter: contrast(30);
+        }
+    }
+
+    .btn-main-post {
+        background: #F5F0ED;
+        border: 2px solid #F6E9DA;
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.04), inset 0px 0px 40px 14px #FFFFFF;
+        border-radius: 40px;
+    }
+
+    //menu2 
+    .menu2-height {
+        height: 96px !important;
+    }
+
+    .text-services-menu2 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+
+        color: #333333;
+    }
+
+    .input-wrapper:focus-within .iconLeft {
+        display: none;
+    }
+
+    //categories
+    .buttonCategoriesPhone {
+        display: none !important;
+    }
+
+    .btn-collapse {
+        display: none !important;
+    }
+
+    //Card Session 
+    .cardSession {
+
+        .btn-close-session {
+            display: none;
+        }
+
+        .session-text {
+            display: none;
+        }
+    }
+
+    //card session valid 
+    .cardSessionValid {
+        .btn-close-session {
+            display: none !important;
+        }
+
+        .log-valid-phone {
+            display: none !important;
+        }
+
+        .icon-left-session {
+            display: none !important;
+        }
+
+        .view-password-session {
+            position: absolute !important;
+            margin-top: 20px !important;
+            left: 16.8rem !important;
+        }
+    }
+
+    //card session password
+    .cardSessionPassword {
+        .btn-close-session {
+            display: none !important;
+        }
+    }
+
+
+    // End Session
+
+    //card Session register
+    .view-password-register {
+        position: absolute;
+        left: 19rem !important;
+    }
+
+    .letter-notification {
+        width: 300px !important;
+    }
+
+    .cardRegisterPhone {
+        width: 400px;
+    }
+
+    //End Session register
+
+    //Card Register 
+    .cardRegister {
+        .btn-close-register {
+            display: none;
+        }
+
+        .log-disabled-web {
+            display: none;
+        }
+
+        .session-text {
+            display: none;
+        }
+    }
+
+    .container-phone-valid {
+        width: 400px;
+    }
+
+    .cardSessionNewPassword {
+        .view-password-new {
+            position: absolute;
+            left: 15rem !important;
+        }
+    }
+
+    //card register valid 
+    .cardRegisterValid {
+        .btn-close-register {
+            display: none !important;
+        }
+
+        .view-password-session {
+            position: absolute !important;
+            margin-top: 20px !important;
+            left: 15.5rem !important;
+        }
+
+        .icon-left-session {
+            display: none !important;
+        }
+
+        .view-password-session-web {
+            position: absolute !important;
+            margin-top: 12px !important;
+            left: 15.5rem !important;
+        }
+    }
+
+    //End register
+
+    //View-password register phone
+    .view-password-phone {
+        position: absolute;
+        left: 14rem !important;
+        margin-top: 1rem;
+    }
+
+    //View-password new password web
+    .view-password-new {
+        position: absolute;
+        left: 25rem !important;
+    }
+
+    //Card product
+    .cardProduct {
+
+        .card-description {
+            font-size: 1.3em;
+        }
+    }
+
+    //menu
+    .services-section {
+        :focus {
+            background-color: #F3D4CE !important;
+        }
+
+        :active {
+            background-color: #F3D4CE !important;
+        }
+    }
+
+    //menu2
+    .services-section-resp {
+        display: none;
+    }
+
+    .register-phone {
+        display: none !important;
+    }
+
+
+    //logo 2 phone
+    .logo-menu2-phone {
+        display: none !important;
+    }
+
+    //menu phone
+    .menu-phone {
+        display: none;
+    }
+
+    .cardSessionRecovery {
+
+        .btn-close-session {
+            display: none;
+        }
+
+        .btn-phone-white {
+            display: none !important;
+        }
+
+        .svg-phone {
+            margin-top: 7rem !important;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+
+    //eat category
+    .img-eat-barra-phone {
+        display: none !important;
+    }
+
+    //btn categories
+    .img-phone {
+        width: 230px !important;
+    }
+
+    //CardSession
+    .cardSession {
+        .input-wrapper .input {
+            font-size: 14px;
+        }
+    }
+
+    //menu
+    .logo-menu-repsonsive {
+        width: 100px;
+    }
+
+    .main-phone-log {
+        margin: 0 !important;
+    }
+
+    //search menu
+    .input-search {
+        width: 280px;
+
+        .input-border-media {
+            padding: 10px !important;
+
+        }
+
+    }
+
+    //menu2
+    .text-menu2 {
+        font-size: 1.1em !important;
+        margin-top: 5px;
+    }
+
+    //Card product
+    .cardProduct {
+
+        .favorite-card {
+            margin-left: 11rem !important;
+        }
+
+        .container-description {
+            font-size: .7em;
+
+            .container-btn {
+                width: 350px;
+
+                .spacing-product {
+                    .btn-product {
+                        position: absolute;
+                        margin-right: 6.5rem !important;
+                        width: 4rem !important;
+                        font-size: .8em;
+                    }
+                }
+            }
+        }
+    }
+
+    .svg-menu2 {
+        margin-bottom: .5rem;
+        height: 20px;
+        width: 20px;
+    }
+
+    .text-services-menu2 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+
+        color: #333333;
+    }
+
+    //footer
+    .footer-text {
+        font-size: .6em;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+
+    .text-services-menu2 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+
+        color: #333333;
+    }
+
+    //card session
+    .cardSession {
+        .input-wrapper .input {
+            font-size: 14px;
+        }
+    }
+
+    //menu
+    .logo-menu-repsonsive {
+        width: 100px;
+    }
+
+    .seccion-main {
+        font-size: .7em;
+
+        .svg-menu2 {
+            width: 20px;
+        }
+
+        .text-menu2 {
+            margin-top: 6px;
+        }
+    }
+
+    //menu2
+    .btn-menu2 {
+        padding-left: 5rem;
+    }
+
+    //Card product
+    .cardProduct {
+
+        .favorite-card {
+            margin-left: 15rem !important;
+        }
+
+        .container-description {
+            font-size: .9em;
+
+            .container-btn {
+                width: 350px;
+
+                .spacing-product {
+                    .btn-product {
+                        position: absolute;
+                        margin-right: 3rem !important;
+                        width: 5rem !important;
+                        font-size: .8em;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .footer-text {
+        font-size: .8em;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+    //menu2
+    .btn-menu2 {
+        padding-left: 5rem;
+    }
+
+    //btn categories
+    .img-phone {
+        width: 350px !important;
+    }
+}

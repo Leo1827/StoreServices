@@ -1,0 +1,44 @@
+.cardRegisterConfirm{
+    background-color: #F5F0ED;
+    height: 100vh;
+
+    .title-confirm{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 111%;
+        text-align: center;
+        color: #333333;
+    }
+
+    .section-border{
+        width: 446px;
+        height: 88px;
+        background: #F9F7F5;
+        border: 0.5px solid #736E6E;
+        border-radius: 7px;
+        .section-card{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #333333;
+        }
+    }
+    
+    .btn-confirm-phone{
+        background-color: #F9A823;
+        border-radius: 30px;
+        color: #fff;
+        width: 247px;
+        height: 62px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 27px;
+        text-align: center;
+    }
+
+}
+

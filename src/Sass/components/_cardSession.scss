@@ -1,0 +1,140 @@
+.cardSession{
+    font-family: 'Spline Sans';
+    .container-phone {
+        background-color: #F5F0ED;
+        border-radius: 20px;
+        height: 585px;
+        width: 409px;
+    }
+
+    .btn-close-session{
+        position: absolute;
+        right: 1rem;
+        bottom: 5px;
+    }
+
+    .input-wrapper .input{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 20px;
+        color: #333333;
+        padding-left: 3rem !important;
+    }
+
+    ::placeholder{
+        padding-left: 1.6rem !important;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 20px;
+        color: #736E6E;
+    } 
+
+    .border-email {
+        border: 1px solid #fff !important;
+        outline: none;
+    }
+
+    .border-email-gray{
+        border: 1px solid #CEC6E8!important;
+        outline: none;
+    }
+
+    .alert-input-danger {
+        height: 50px;
+        border-radius: 20px;
+        border: 1px solid #F2C3BE;
+        background: #F3D4CE;
+        color: #000;
+        outline: none;
+    }
+
+    .btn-session{
+        width: 307px;
+        height: 52px;
+        background: #F9A823;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 39px;
+
+        .text-continue{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 23px;
+            text-align: center;
+        }
+    }
+
+    .btn-session-dark{
+        width: 307px;
+        height: 52px;
+        background: #020202;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 39px;
+
+        .text-continue{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 23px;
+            text-align: center;
+        }
+    }
+
+    .line-center {
+        width: 90px;
+    }
+
+    .container-btns{
+        display: inline-block;
+        justify-content: center;
+        margin-top: 10px;
+        .btn-google{
+            width: 71px;
+            height: 51px;       
+            background-color: white;
+            border-radius: 21px;
+            .a-btn{
+                height: 3rem;
+                position: absolute;
+                margin-top: 1rem;
+            }
+            
+        }
+        .btn-facebook{
+            width: 90px;
+            height: 70px;
+            background-color: white;
+            text-align: start;
+            .a-btn{
+                position: absolute;
+            }
+        }
+    }
+
+    .count-text{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #333333;
+    }
+
+    .btn-text-log{
+        background: #EDE6EE;
+        border-radius: 11px;
+        width: 113px;
+        height: 30px;
+
+        .text-ini{
+            display: flex;
+            margin-left: 12px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #5726F9;
+        }
+    }
+}

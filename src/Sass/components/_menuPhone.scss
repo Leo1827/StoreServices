@@ -1,0 +1,12 @@
+.menu-phone{
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    .container-menu-phone{
+        height: 4.5rem;
+        background-color: #fff;
+        border-radius: 50px;
+    }
+}

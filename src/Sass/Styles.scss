@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap');
+@import './variables';
+//@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './components/Input.scss';
+
+@import './components/cardRegister';
+@import './components/cardRegisterValid';
+@import './components/cardRegisterVerify';
+@import './components/cardRegisterConfirm';
+@import './components/cardNotification';
+@import './components/cardNotificationOops';
+
+@import './components/cardSession';
+@import './components/cardSessionValid';
+@import './components/cardSessionPassword';
+@import './components/cardSessionRecovery';
+@import './components/cardSessionNewPassword';
+@import './components/cardSessionNotification';
+
+@import './components/cardProduct';
+@import './components/sectionCard';
+@import './components/menuPhone';
+@import './components/buttonCategories';
+@import './components/buttonCategoriesPhone';
+@import './components/carouselCategories';
+@import './components/homeServices';
+@import './components/profileImg';
+@import './components/profileModal';
+@import './components/eatCategory';
+@import './components/categoryItem';
+
+@import './components/modal';
+
+@import './components/footer';
+@import './globals';
+@import './components/mediaQuerys';

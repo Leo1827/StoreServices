@@ -1,0 +1,25 @@
+.sectionCard{
+    &__title-section{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px !important;
+        line-height: 28px;
+        color: #333333;
+    }
+
+    &__btn-plus{
+        background: #F5F0ED;
+        border: 2px solid #F6E9DA;
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.04), inset 0px 0px 40px 14px #FFFFFF;
+        border-radius: 15px;
+        height: 42px !important;
+        width: 109px !important;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #333333;
+        margin-left: 20px;
+    }
+}

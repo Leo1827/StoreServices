@@ -1,0 +1,162 @@
+.cardSessionValid{
+    width: 409px;
+    height: 585px;
+    background: #F5F0ED;
+    border-radius: 24px;
+    text-align: center;
+
+    .btn-close-session{
+        position: absolute;
+        right: 1px;
+        bottom: 70px;
+    }
+
+    .input-wrapper .input{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 20px !important;
+        padding-left: 2.2rem !important;
+        
+    }
+
+    .border-session-valid{
+        border: 1px solid #dd090941 !important;
+    }
+
+    .title-valid{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 31px;
+        text-align: center;
+        color: #333333;
+        width: 268px;
+        height: 65px;
+    }
+
+    ::placeholder {
+        color: #333 !important; 
+    }
+
+    .view-password-session {
+        position: absolute !important;
+        margin-top: 20px !important;
+        left: 14.9rem !important;
+    }
+
+    .input-wrapper .iconRightValid svg{
+        padding-left: 20rem !important;
+    }
+
+    .border-email {
+        height: 50px;
+        border-radius: 20px;
+        border: 1px solid #fff !important;
+        outline: none;
+    }
+
+    .border-email-gray{
+        border: 1px solid #CEC6E8!important;
+    }
+
+    .border-password-valid{
+        height: 50px;
+        border-radius: 20px;
+        border: 1px solid #CEC6E8!important;
+        outline: none;
+    }
+    
+    .email-color-blue{
+        color: #5726F9 !important;
+    }
+
+    .input-wrapper .iconRight svg{
+        color: #5726F9 !important;
+    }
+
+    .alert-input-danger {
+        height: 50px;
+        border-radius: 20px;
+        border: 1px solid #dd090941;
+        background-color: #F2C3BE;
+        color: #000;
+        outline: none;
+    }
+
+    .btn-session{
+        width: 307px;
+        height: 52px;
+        background: #F9A823;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 39px;
+
+        .text-continue{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 23px;
+            text-align: center;
+        }
+    }
+
+    .btn-session-dark{
+        width: 307px;
+        height: 52px;
+        background: #020202;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 39px;
+
+        .text-continue{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 23px;
+            text-align: center;
+        }
+    }
+
+    .btn-continue {
+        height: 50px;
+    }
+
+    .line-center {
+        width: 90px;
+    }
+
+    .buton-facebook{
+        background-color: #1977F3;
+        color: white;
+        width: 150px;
+    }
+
+    .text-terminos {
+        font-size: .7em;
+    }
+
+
+    .count-text{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #333333;
+    }
+
+    .btn-text-log{
+        background: #EDE6EE;
+        border-radius: 11px;
+        width: 113px;
+        height: 30px;
+
+        .text-ini{
+            display: flex;
+            margin-left: 12px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #5726F9;
+        }
+    }
+}

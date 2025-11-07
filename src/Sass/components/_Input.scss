@@ -1,0 +1,112 @@
+.input-wrapper {
+  position: relative;
+
+  .input {
+    background-color: #E4DDF3;
+    border-radius: 23px;
+    border-color: #E4DDF3;
+    box-sizing: border-box;
+    color: #191919;
+    padding: 15px 20px 15px 35px;
+
+  }
+
+  .input-password:valid {
+    border: 1px solid #CEC6E8;
+  }
+
+  .validations-password {
+    background-color: red;
+
+    span {
+      font-size: 3rem !important;
+
+    }
+  }
+
+  .input-not-space {
+    background-color: #E4DDF3;
+    border-radius: 23px;
+    border-color: #E4DDF3;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 15px !important;
+    line-height: 20px !important;
+    color: #333333 !important;
+    padding: 15px 20px 15px 34px;
+
+  }
+
+  .iconLeft svg {
+    color: #ADA8A8;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  .iconRight svg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+}
+
+
+.input-search {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  position: relative;
+  width: 400px;
+
+  .input {
+
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: #191919;
+    outline: none;
+    padding: 8px 15px 8px 35px;
+    width: 100%;
+  }
+
+  .btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      color: $white;
+    }
+  }
+
+  .iconLeft svg {
+    color: #ADA8A8;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .btn-search-input {
+    right: 8px;
+    height: 36px;
+    width: 36px;
+    background-color: #F9A823;
+  }
+
+}

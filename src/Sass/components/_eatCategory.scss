@@ -1,0 +1,59 @@
+.eatCategory{
+    .text-eat-barr{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 32px;
+        color: #333333;
+        padding-left: 70px;
+        margin-bottom: 2rem !important;
+    }
+
+    .border-eatcategory{
+        background: #F5F0ED;
+        border: 0.5px solid #ADA8A8;
+        border-radius: 17px;
+        height: 614px;
+        margin-left: 8px !important;
+        flex-basis: calc(50% - 10px);
+        width: calc(100% / 4 - 5px); /* Cambia el número '3' por la cantidad de tarjetas que desees mostrar por fila */
+        max-width: 850px;
+
+        .img-category-page{
+            border-radius: 20px !important;
+            height: 110px;
+            width: 600px;
+            filter: brightness(100%) opacity(0.5);
+        }
+    }
+
+    .section-toltip{
+        margin-bottom: 16rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .title-services-eat{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 31px;
+            text-align: center;
+            color: #333333;
+        }
+
+    .btn-snack{
+        background: #F5F0ED;
+        border: 2px solid #F6E9DA;
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.04), inset 0px 0px 40px 14px #FFFFFF;
+        border-radius: 16px;
+        height: 52px;
+        width: 210px;
+    }
+
+}
+
+    .btn-eat-categories{
+        border-radius: 20px;
+    }
+}

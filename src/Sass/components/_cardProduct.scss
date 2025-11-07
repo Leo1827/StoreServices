@@ -1,0 +1,38 @@
+.cardProduct{
+    .favorite-card{
+        margin-left: 20rem !important;
+    }
+    .container-description{
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.144);
+        border-radius: 0px 0px 25px 25px;
+        text-align: center;
+        
+    }
+
+    .img-product{
+        height: 200px;
+    }
+
+    .btn-tooltip{
+        background-color: #f5f0edbb;
+        border-radius: 15px;
+        text-align: center;
+        width: 100px;
+    }
+
+
+    .card-description{
+        margin-left: 3.5rem;
+        font-size: 1.4em;
+    }
+
+    .spacing-product{
+        .btn-product{
+            background-color: white;
+            border-radius: 10px;
+            width: 100px !important; 
+        }
+    }
+}
+

@@ -1,0 +1,82 @@
+.cardRegisterVerify {
+
+    .verify-valid {
+        width: 409px;
+        height: 585px;
+        background: #F5F0ED;
+        border-radius: 24px;
+        font-family: 'Spline Sans';
+
+        .title-verify{
+            font-family: 'Spline Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 111%;
+            text-align: center;
+            color: #F9A823;
+        }
+
+        .border-web{
+            background-color: #F9F7F5;
+            width: 262px;
+            height: 144px;      
+            background: #F9F7F5;
+            border: 0.5px solid #736E6E;
+            border-radius: 7px;
+
+            .mesagge-card{
+                font-family: 'Spline Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+                color: #333333;
+            }
+
+            .verify-text{
+                width: 200px !important;
+            }
+        
+            .info-card{
+                border-radius: 5px;
+                display: flex;
+                color: #736E6E;
+                font-size: .8em;
+            }
+            
+        }
+
+        .chronometer-verify{
+            font-size: 2rem !important;
+            color: #F9A823;
+        }
+
+        .styled-letter{
+            background-color: #FFF3E0;
+            border: 1px solid #F9A823;
+            border-radius: 15px;
+            margin-left: 5px;
+            width: 42px;
+        }
+
+        .resend{
+            background: #EDE6EE;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 11px;
+            width: 130px;
+            height: 30px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            color: #5726F9;
+
+            .text-send{
+                margin-top: 1rem !important;
+            }
+        }
+    }
+}

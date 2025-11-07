@@ -1,0 +1,80 @@
+  <svg
+                                            width="73"
+                                            height="85"
+                                            viewBox="10 10 80 30"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <g filter="url(#filter0_d_5185_3628)">
+                                                <circle
+                                                    cx="36.5"
+                                                    cy="36.5"
+                                                    r="23.5"
+                                                    fill="#F9A823"
+                                                />
+                                                <circle
+                                                    cx="36.5"
+                                                    cy="36.5"
+                                                    r="24.5"
+                                                    stroke="white"
+                                                    strokeWidth="2"
+                                                />
+                                            </g>
+                                            <path
+                                                d="M36.2451 48.0676V23.7338"
+                                                stroke="white"
+                                                strokeWidth="3.5"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
+                                            <path
+                                                d="M47.5845 35.9006L24.9058 35.9006"
+                                                stroke="white"
+                                                strokeWidth="3.5"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
+                                            <defs>
+                                                <filter
+                                                    id="filter0_d_5185_3628"
+                                                    x="0"
+                                                    y="0"
+                                                    width="73"
+                                                    height="73"
+                                                    filterUnits="userSpaceOnUse"
+                                                    colorInterpolationFilters="sRGB"
+                                                >
+                                                    <feFlood
+                                                        floodOpacity="0"
+                                                        result="BackgroundImageFix"
+                                                    />
+                                                    <feColorMatrix
+                                                        in="SourceAlpha"
+                                                        type="matrix"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                        result="hardAlpha"
+                                                    />
+                                                    <feOffset />
+                                                    <feGaussianBlur stdDeviation="5.5" />
+                                                    <feComposite
+                                                        in2="hardAlpha"
+                                                        operator="out"
+                                                    />
+                                                    <feColorMatrix
+                                                        type="matrix"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
+                                                    />
+                                                    <feBlend
+                                                        mode="normal"
+                                                        in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_5185_3628"
+                                                    />
+                                                    <feBlend
+                                                        mode="normal"
+                                                        in="SourceGraphic"
+                                                        in2="effect1_dropShadow_5185_3628"
+                                                        result="shape"
+                                                    />
+                                                </filter>
+                                            </defs>
+                                        </svg>

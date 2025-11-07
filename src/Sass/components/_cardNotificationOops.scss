@@ -1,0 +1,48 @@
+.cardNotification-oops{
+
+    .notification-oops{
+        background-color: #F5F0ED;
+        border-radius: 30px;
+        width: 409px;
+        height: 585px;
+
+        .container-notification{
+            padding-top: 80px;
+
+            .section-text{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+
+                .title-ops{
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 37.7476px;
+                    line-height: 45px;
+                    text-align: center;
+                    color: #333333;
+                }
+
+                .text-ops{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18.8738px;
+                    line-height: 22px;
+                    text-align: center;
+                    color: #333333;
+                }
+            }
+
+            .section-btn{
+                display: none;
+            }
+
+            .btn-notification{
+                color: #fff;
+                font-size: 1.3em;
+                font-weight: 700;
+                width: 100px;
+            }
+        }
+
+    }
+}

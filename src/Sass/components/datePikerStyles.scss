@@ -1,0 +1,89 @@
+body {
+    background-color: #f9f9f9;
+}
+
+.MuiPickersDay-daySelected {
+    color: #fff !important;
+    font-weight: 500;
+    width: 10px !important;
+    background-color: #4220ea !important;
+    :hover{
+        color: #fff !important;
+    }
+    p{
+        color: #fff !important;
+    }
+}
+
+.MuiPickersBasePicker-containerLandscape{
+    flex-direction:column !important;
+}
+
+.MuiPickersBasePicker-pickerView {
+    border-radius: 25px;
+    display: flex !important;
+    max-width: 550px !important;
+    min-width: 0 !important;
+    height: 500px !important; 
+    overflow-x: hidden !important; 
+}
+
+
+.MuiPickersCalendarHeader-switchHeader {
+    display: flex;
+    border: 1px solid #F9A823 !important;
+    border-radius: 25px !important;
+    margin-top: 4px;
+    align-items: center;
+    margin-bottom: 8px;
+    justify-content: space-between !important;
+
+    .MuiTypography-body1 {
+        color: #333333;
+        font-size: 1.5rem;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 550;
+        line-height: 1 !important;
+        letter-spacing: 0.00948em;
+    }
+
+    .MuiSvgIcon-root {
+        color: #736E6E !important;
+        font-size: 1.5em;
+        
+    }
+
+}
+
+.MuiPickersCalendarHeader-dayLabel{
+    padding-top: 50px !important;
+    color: #333333 !important;
+    font-size: 1.4em !important;
+    width: 300px !important;
+}
+
+.MuiPickersCalendar-transitionContainer {
+    border: 1px solid #cbc7c7 !important;
+    height: 350px;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-top: 42px !important;
+}
+
+.MuiPickersDay-day {
+    color: rgba(0, 0, 0, 0.87) !important;
+    width: 68px !important;
+    height: 63px !important;
+    margin: 0 2px;
+    padding: 0;
+    font-size: 1.5em !important;
+    font-weight: 500;
+}
+
+.MuiPickersToolbar-toolbarLandscape {
+    height: auto !important;
+    padding: 8px !important;
+    max-width: 550px !important; 
+    justify-content: center !important;
+}
+

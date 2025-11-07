@@ -1,0 +1,97 @@
+.buttonCategoriesPhone{
+    .title-categories-phone{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        /* identical to box height */
+        color: #333333;
+    }
+
+    .text-categories-phone{
+        position: absolute;
+        width: 139px;
+        height: 24px;
+        left: calc(29% - 139px/2);
+        top: calc(41% - 24px/2 + 0.5px);
+
+        font-family: 'Spline Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    .text-photo-phone{
+        position: absolute;
+        height: 24px;
+        right: 9%;
+        top: calc(41% - 24px/2 + 0.5px);
+        font-family: 'Spline Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .text-eat-phone{
+        position: absolute;
+        width: 139px;
+        height: 24px;
+        left: calc(38% - 139px/2);
+        top: calc(51.5% - 24px/2 + 0.5px);
+        font-family: 'Spline Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .text-amb-phone{
+        position: absolute;
+        height: 24px;
+        right: 11%;
+        top: calc(51.5% - 24px/2 + 0.5px);
+        font-family: 'Spline Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .text-dom-phone{
+        position: absolute;
+        width: 139px;
+        height: 24px;
+        left: calc(36% - 139px/2);
+        top: calc(62.5% - 24px/2 + 0.5px);
+        font-family: 'Spline Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}

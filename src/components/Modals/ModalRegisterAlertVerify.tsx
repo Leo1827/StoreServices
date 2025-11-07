@@ -1,0 +1,31 @@
+import CardNotification from '../CardNotification'
+import ModalWithBlur from '../ModalWithBlur'
+
+interface ModalRegisterAlertVerifyI{
+  openModal: boolean
+}
+
+const ModalRegisterAlertVerify = ({openModal}:ModalRegisterAlertVerifyI) => {
+    const imgTitle = (
+      <svg width="86" height="87" viewBox="0 0 86 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M42.9971 0.5C19.2527 0.5 0 19.7527 0 43.4971C0 67.2414 19.2527 86.4941 42.9971 86.4941C66.7414 86.4941 85.9941 67.2414 85.9941 43.4971C85.9941 19.7527 66.7473 0.5 42.9971 0.5ZM67.5224 36.3984L40.0496 65.3332C38.5347 66.9303 36.0158 67.0066 34.4012 65.5035L20.7675 52.7917C18.5364 50.7073 18.4131 47.2079 20.4974 44.9767C22.5818 42.7455 26.0812 42.6222 28.3124 44.7066L34.636 50.6075C36.3623 52.2221 36.8379 53.2496 36.8379 53.2496C36.8379 53.2496 37.3545 52.0342 39.0044 50.3843C42.0987 47.2842 59.5019 28.7948 59.5019 28.7948C61.6039 26.5812 65.1033 26.4873 67.3169 28.5893C69.5304 30.6913 69.6244 34.1907 67.5224 36.4043V36.3984Z" fill="#F9A823"/>
+      </svg>
+
+    );
+  return (
+    
+    <ModalWithBlur
+        content={<CardNotification
+            iconCard={imgTitle}
+            context="El mensaje ha sido reenviado"
+            btnText={"OK"}
+          />}
+        width={'450px'}
+        modalIsOpen={openModal}
+        closeModalName={'notification-msg'}
+      
+    />
+  )
+}
+
+export default ModalRegisterAlertVerify

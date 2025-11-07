@@ -1,0 +1,87 @@
+.cardSessionRecovery {
+    background-color: #F5F0ED;
+    border-radius: 25px;
+    padding: 3rem;
+    text-align: center;
+    width: 409px;
+    height: 585px;
+    overflow: hidden;
+
+    .btn-close-session{
+        position: absolute;
+        right: 1px;
+        left: 19rem;
+        bottom: 3rem;
+    }
+
+
+    .input-wrapper .input{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 20px;
+        color: #333333;
+        padding-left: 2.8rem !important;
+    }
+
+    ::placeholder{
+        padding-left: 1.8rem !important;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 20px;
+        color: #736E6E;
+    } 
+
+    .input-wrapper .input {
+        padding-left: 3rem !important;
+        font-size: 16px !important;
+    }
+
+    .border-email {
+        border: 1px solid #fff !important;
+        outline: none;
+    }
+
+    .border-email-gray{
+        border: 1px solid #CEC6E8!important;
+        outline: none;
+    }
+
+    .alert-input-danger {
+        height: 50px;
+        border-radius: 20px;
+        border: 1px solid #F2C3BE;
+        background: #F3D4CE;
+        color: #000;
+        outline: none;
+    }
+
+    .border-password-valid{
+        height: 50px;
+        border-radius: 20px;
+        border: 1px solid #CEC6E8!important;
+        outline: none;
+    }
+
+    .span-alert-card {
+        color: #E72727;
+        font-size: .8em;
+        margin-left: 12px;
+    }
+
+    .alert-input-danger {
+        height: 50px;
+        border-radius: 20px;
+        border: 1px solid #dd090941;
+        background-color: #F2C3BE;
+        color: #000;
+        outline: none;
+    }
+
+    .border-white {
+        border: 1px solid #fff;
+        outline: none;
+    }
+
+}
