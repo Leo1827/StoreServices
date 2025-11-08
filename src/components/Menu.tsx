@@ -1,264 +1,127 @@
-import { useDispatch } from 'react-redux'
-import { Link } from 'react-router-dom'
-import { openModal } from '../store/slices/modal/modalSlice'
-import IconList from './IconList'
+import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+import { openModal } from "../store/slices/modal/modalSlice";
+import IconList from "./IconList";
+import { Menu as MenuIcon, Search, Bell, Briefcase } from "lucide-react";
+import { useState } from "react";
 
 const Menu = (): JSX.Element => {
-    const dispatch = useDispatch()
+  const dispatch = useDispatch();
+  const [open, setOpen] = useState(false);
 
-    const openRegisterModal = (): void => {
-        const payload = {
-            modal: 'register-step1',
-            data: [],
-        }
+  const openRegisterModal = (): void => {
+    dispatch(openModal({ modal: "register-step1", data: [] }));
+  };
 
-        dispatch(openModal(payload))
-    }
+  const openLoginModal = (): void => {
+    dispatch(openModal({ modal: "login-modal", data: [] }));
+  };
 
-    const openLoginModal = (): void => {
-        const payload = {
-            modal: 'login-modal',
-            data: [],
-        }
+  return (
+    <nav className="w-full bg-[#FCFCFA] border-b border-gray-200">
+      <div className="max-w-7xl mx-auto px-4 flex items-center justify-between py-3">
+        {/* --- LOGO --- */}
+        <Link to="/" className="flex items-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100"
+            className="w-18 h-8 text-gray-800"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="6"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <rect x="18" y="34" width="84" height="62" rx="8" />
+            <path d="M34 34c0-11 8-18 22-18s22 7 22 18" />
+            <path d="M45 62h30" />
+          </svg>
+        </Link>
 
-        dispatch(openModal(payload))
-    }
-
-    return (
-        <nav
-            className="navbar main-responsive border-bottom navbar-expand-lg bg-body-tertiary alt-nav"
-            style={{ backgroundColor: '#F8F4F3' }}
+        {/* --- BOTÓN PUBLICAR SERVICIO --- (centro en móvil) */}
+        <Link
+          to="/home-services"
+          className=" sm:block border border-[#F6E9DA] bg-white text-gray-700 font-medium px-4 py-2 rounded-lg shadow-sm hover:bg-[#F6E9DA]/30 transition"
         >
-            <div className="container-fluid d-flex mb-2">
-                <Link
-                    className="navbar-brand my-3 logo-menu"
-                    style={{ marginLeft: '2rem' }}
-                    to={'/'}
-                >
-                    <svg
-                        className="logo-menu-repsonsive"
-                        width="150"
-                        height="44"
-                        viewBox="0 0 163 44"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <g clipPath="url(#clip0_244_90)">
-                            <path
-                                d="M15.7188 30.831L14.9111 30.1355C13.8747 29.2471 13.7578 27.6835 14.6469 26.6529L14.9923 26.2518C15.0431 26.1909 20.1998 20.1902 24.3657 14.6769C28.2725 9.50879 28.0846 7.83347 27.4851 6.95012C26.5503 5.5794 23.5173 5.72155 18.4724 7.37149C12.3759 9.36664 4.63846 12.6411 4.55717 12.6716L4.06945 12.8797C2.80951 13.4128 1.36159 12.8239 0.828145 11.5699L0.411551 10.5901C-0.121892 9.3311 0.467436 7.88423 1.7223 7.35118L2.21002 7.14303C2.53516 7.00596 10.2625 3.74163 16.5977 1.66524C22.1354 -0.147148 28.9432 -1.57371 32.4486 3.56902C36.1675 9.0265 31.4326 15.2861 29.1616 18.2966C24.8788 23.9622 19.7628 29.9172 19.5495 30.166L19.204 30.5671C18.3149 31.6027 16.7502 31.7195 15.7188 30.831Z"
-                                fill="#F9A823"
-                            />
-                            <path
-                                d="M8.83985 44.0001C5.88812 44.0001 3.19042 43.0965 1.37672 40.4363C-2.34215 34.9788 2.3928 28.7192 4.66374 25.7087C8.94653 20.043 14.0625 14.088 14.2759 13.8393L14.6214 13.4382C15.5104 12.4026 17.0752 12.2858 18.1065 13.1742L18.9143 13.8697C19.9507 14.7582 20.0676 16.3218 19.1785 17.3524L18.833 17.7534C18.7822 17.8144 13.6256 23.815 9.45966 29.3284C5.55282 34.4965 5.74079 36.1718 6.34028 37.0552C7.27508 38.4259 10.3081 38.2837 15.3529 36.6338C21.4494 34.6386 29.1869 31.3641 29.2682 31.3337L29.7559 31.1255C31.0159 30.5925 32.4638 31.1814 32.9972 32.4353L33.4138 33.4151C33.9473 34.6742 33.3579 36.121 32.1031 36.6541L31.6153 36.8622C31.2902 36.9993 23.5629 40.2636 17.2276 42.34C14.5553 43.2132 11.5884 44.0001 8.83985 44.0001Z"
-                                fill="#F9A823"
-                            />
-                            <path
-                                d="M140.249 16.6668V37.6946C140.249 38.9079 139.269 39.8877 138.054 39.8877H136.063C134.849 39.8877 133.868 38.9079 133.868 37.6946V16.6668C133.868 15.4534 134.849 14.4736 136.063 14.4736H138.054C139.269 14.4736 140.249 15.4534 140.249 16.6668Z"
-                                fill="#333333"
-                            />
-                            <path
-                                d="M161.694 18.9412H157.081V37.5068C157.081 38.8217 156.014 39.8878 154.698 39.8878H153.062C151.746 39.8878 150.679 38.8217 150.679 37.5068V18.9412H146.016C145.294 18.9412 144.71 18.3574 144.71 17.6365V14.9915C144.71 14.2706 145.294 13.6868 146.016 13.6868H150.679V6.04125C150.679 4.65023 151.807 3.52319 153.199 3.52319H154.566C155.958 3.52319 157.086 4.65023 157.086 6.04125V13.6817H161.699C162.42 13.6817 163.005 14.2655 163.005 14.9864V17.6314C163.005 18.3523 162.42 18.9361 161.699 18.9361L161.694 18.9412Z"
-                                fill="#333333"
-                            />
-                            <path
-                                d="M53.6489 13.7226C50.118 13.7226 47.8724 14.4791 44.1231 17.7891C43.2848 18.5252 42.0452 19.8655 42.0452 19.8655C41.969 19.9416 41.8725 19.9772 41.7708 19.9772C41.6591 19.9772 41.5524 19.9315 41.4762 19.8401C41.3441 19.6827 41.3746 19.439 41.5219 19.2969L43.9808 16.86C44.7835 16.0681 45.2306 14.9867 45.2306 13.8597V5.95016C45.2306 4.60991 44.1434 3.52856 42.8073 3.52856H41.273C39.9317 3.52856 38.8496 4.61498 38.8496 5.95016V37.4716C38.8496 38.8118 39.9368 39.8932 41.273 39.8932H42.7564C44.0977 39.8932 45.1798 38.8067 45.1798 37.4716V23.9065C45.1798 22.3074 45.7641 22.0129 46.9325 21.1397C52.7445 16.9362 56.057 20.2868 56.057 23.3836V37.4716C56.057 38.8118 57.1442 39.8932 58.4803 39.8932H60.0146C61.3558 39.8932 62.438 38.8067 62.438 37.4716V24.4751C62.438 16.3625 57.7589 13.7277 53.6438 13.7277L53.6489 13.7226Z"
-                                fill="#333333"
-                            />
-                            <path
-                                d="M78.9694 13.6868C71.9889 13.6868 66.3242 19.2306 66.3242 27.0843C66.3242 34.938 71.9838 40.4817 78.9694 40.4817C85.9549 40.4817 91.6145 34.938 91.6145 27.0843C91.6145 19.2306 85.9549 13.6868 78.9694 13.6868ZM78.9694 34.938C75.5096 34.938 72.7103 32.029 72.7103 27.0843C72.7103 22.1395 75.5147 19.2306 78.9694 19.2306C82.424 19.2306 85.2284 22.0024 85.2284 27.0843C85.2284 32.1661 82.424 34.938 78.9694 34.938Z"
-                                fill="#333333"
-                            />
-                            <path
-                                d="M125.069 14.4788C124.256 14.4788 123.545 15.022 123.337 15.8089C122.376 19.4083 120.608 26.074 119.75 29.3231C119.521 30.1912 118.84 32.8007 118.84 32.8007C118.84 32.8007 116.747 27.993 115.701 25.211C115.381 24.3581 114.227 22.9315 111.692 22.9315C109.157 22.9315 108.004 24.3581 107.684 25.211C106.607 28.0641 104.544 32.8007 104.544 32.8007C104.544 32.8007 103.863 30.1912 103.635 29.3231C102.781 26.0689 101.008 19.4083 100.048 15.8089C99.8396 15.027 99.1284 14.4788 98.3155 14.4788H95.3536C94.175 14.4788 93.3164 15.6007 93.6263 16.7379C94.8049 21.0734 97.0556 29.3688 97.7516 32.0341C98.4628 34.7552 99.4535 39.8167 104.808 39.8167C108.126 39.8167 109.289 36.3239 111.687 29.8714C114.085 36.3239 115.249 39.8167 118.566 39.8167C123.921 39.8167 124.911 34.7552 125.623 32.0341C126.319 29.3688 128.569 21.0734 129.748 16.7379C130.058 15.6007 129.199 14.4788 128.021 14.4788H125.059H125.069Z"
-                                fill="#333333"
-                            />
-                            <path
-                                d="M137.06 10.2856C138.822 10.2856 140.25 8.85815 140.25 7.09736C140.25 5.33658 138.822 3.90918 137.06 3.90918C135.298 3.90918 133.869 5.33658 133.869 7.09736C133.869 8.85815 135.298 10.2856 137.06 10.2856Z"
-                                fill="#333333"
-                            />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_244_90">
-                                <rect width="163" height="44" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </Link>
+          Consultar servicios
+        </Link>
 
-                <Link className="logo-menu2-phone m-4" to={'/'}>
-                    <svg
-                        width="38"
-                        height="46"
-                        viewBox="0 0 28 36"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M13.0119 25.2237L12.3433 24.6546C11.4855 23.9276 11.3888 22.6481 12.1247 21.8047L12.4106 21.4766C12.4527 21.4267 16.7207 16.5164 20.1688 12.0049C23.4025 7.7759 23.2469 6.40501 22.7507 5.68217C21.977 4.56053 19.4666 4.67685 15.291 6.02697C10.245 7.65958 3.84082 10.3391 3.77354 10.364L3.36986 10.5343C2.32702 10.9705 1.12859 10.4886 0.687066 9.46252L0.342256 8.66076C-0.0992691 7.63051 0.388511 6.44655 1.42715 6.01035L1.83083 5.84003C2.09995 5.72787 8.49575 3.05669 13.7394 1.35761C18.3228 -0.125449 23.9575 -1.29279 26.859 2.91545C29.937 7.38125 26.018 12.5034 24.1384 14.9669C20.5935 19.603 16.3591 24.4759 16.1825 24.6795L15.8966 25.0077C15.1607 25.8551 13.8655 25.9507 13.0119 25.2237Z"
-                            fill="#F9A823"
-                        />
-                        <path
-                            d="M7.31825 35.9998C4.87515 35.9998 2.64229 35.2603 1.14111 33.0835C-1.93695 28.6177 1.98211 23.4956 3.86174 21.0321C7.40656 16.396 11.641 11.5231 11.8176 11.3195L12.1035 10.9913C12.8394 10.1438 14.1346 10.0483 14.9882 10.7753L15.6568 11.3444C16.5146 12.0714 16.6113 13.3509 15.8754 14.1942L15.5895 14.5224C15.5474 14.5723 11.2794 19.4826 7.83127 23.9941C4.59762 28.2231 4.7532 29.594 5.24939 30.3168C6.02311 31.4384 8.5335 31.3221 12.7091 29.972C17.7551 28.3394 24.1593 25.6599 24.2266 25.635L24.6302 25.4647C25.6731 25.0285 26.8715 25.5104 27.313 26.5364L27.6578 27.3382C28.0994 28.3685 27.6116 29.5524 26.573 29.9886L26.1693 30.1589C25.9002 30.2711 19.5043 32.9423 14.2607 34.6414C12.0489 35.3559 9.59316 35.9998 7.31825 35.9998Z"
-                            fill="#F9A823"
-                        />
-                    </svg>
-                </Link>
+        {/* --- HAMBURGUESA --- */}
+        <button
+          className="sm:hidden p-2 rounded-lg hover:bg-gray-100"
+          onClick={() => setOpen(!open)}
+        >
+          <MenuIcon className="w-6 h-6 text-gray-700" />
+        </button>
 
-                <div className="services-section services-section-resp">
-                    <Link
-                        className="btn shadow-sm bg-white btn-service py-3"
-                        style={{ border: '1px solid #F6E9DA' }}
-                        to={'/home-services'}
-                    >
-                        Publicar mi servicio
-                    </Link>
-                </div>
+        {/* --- DESKTOP MENU --- */}
+        <div className="hidden sm:flex items-center gap-10">
+          {/* Búsqueda */}
+          <button className="flex items-center gap-2 text-gray-600 hover:text-gray-800 transition">
+            <Search className="w-5 h-5" />
+            <span className="text-lg font-light">Búsqueda</span>
+          </button>
 
-                <button
-                    className="btn-collapse border-0"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span className="navbar-toggler-icon"></span>
-                </button>
+          {/* Notificaciones */}
+          <button className="flex items-center gap-2 text-gray-600 hover:text-gray-800 transition">
+            <Bell className="w-5 h-5" />
+            <span className="text-lg font-light">Notificaciones</span>
+          </button>
 
-                <div
-                    className="collapse navbar-collapse justify-content-evenly"
-                    id="navbarScroll"
-                >
-                    <div className="seccion-main d-flex ">
-                        <button className="bg-transparent border-0 ">
-                            <div className="d-flex gap-2">
-                                <div className="my-2">
-                                    <svg
-                                        className="svg-menu2"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 18 18"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M17.0004 17.0004L12.9504 12.9504M12.9504 12.9504C13.6004 12.3003 14.116 11.5286 14.4678 10.6793C14.8196 9.82995 15.0007 8.91966 15.0007 8.00036C15.0007 7.08106 14.8196 6.17076 14.4678 5.32144C14.116 4.47211 13.6004 3.7004 12.9504 3.05036C12.3003 2.40031 11.5286 1.88467 10.6793 1.53287C9.82995 1.18107 8.91966 1 8.00036 1C7.08106 1 6.17076 1.18107 5.32144 1.53287C4.47211 1.88467 3.7004 2.40031 3.05036 3.05036C1.73754 4.36318 1 6.14375 1 8.00036C1 9.85697 1.73754 11.6375 3.05036 12.9504C4.36318 14.2632 6.14375 15.0007 8.00036 15.0007C9.85697 15.0007 11.6375 14.2632 12.9504 12.9504V12.9504Z"
-                                            stroke="#736E6E"
-                                            strokeWidth="2"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                        />
-                                    </svg>
-                                </div>
-                                <span
-                                    className="lead text-menu2"
-                                    style={{
-                                        fontSize: '1.6em',
-                                        fontWeight: '300',
-                                        color: '#736E6E',
-                                    }}
-                                >
-                                    Búsqueda
-                                </span>
-                            </div>
-                        </button>
+          {/* Hazte miembro */}
+          <div className="flex items-center gap-2">
+            <Briefcase className="w-6 h-6 text-gray-600" />
+            <button
+              onClick={openRegisterModal}
+              className="text-gray-700 hover:text-gray-900 font-light"
+            >
+              Hazte miembro
+            </button>
+          </div>
 
-                        <button className=" bg-transparent border-0 btn-menu2 container">
-                            <div className="d-flex gap-2">
-                                <div className="my-2">
-                                    <svg
-                                        className="svg-menu2"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 18 19"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fillRule="evenodd"
-                                            clipRule="evenodd"
-                                            d="M12.0008 17C12.001 17.5046 11.8104 17.9906 11.4673 18.3605C11.1242 18.7305 10.654 18.9572 10.1508 18.995L10.0008 19H8.00082C7.49625 19.0002 7.01026 18.8096 6.64028 18.4665C6.2703 18.1234 6.04367 17.6532 6.00583 17.15L6.00082 17H12.0008ZM9.00082 9.54067e-10C10.8158 -2.9945e-05 12.5598 0.704894 13.8651 1.96607C15.1703 3.22726 15.9346 4.94609 15.9968 6.76L16.0008 7V10.764L17.8228 14.408C17.9023 14.567 17.9421 14.7429 17.9388 14.9206C17.9355 15.0984 17.8891 15.2727 17.8037 15.4286C17.7183 15.5845 17.5963 15.7174 17.4483 15.8158C17.3003 15.9143 17.1306 15.9754 16.9538 15.994L16.8388 16H1.16283C0.984989 16.0001 0.809792 15.957 0.652246 15.8745C0.4947 15.792 0.359504 15.6725 0.258242 15.5264C0.15698 15.3802 0.0926725 15.2116 0.0708294 15.0351C0.0489862 14.8586 0.0702592 14.6795 0.132825 14.513L0.178825 14.408L2.00083 10.764V7C2.00083 5.14348 2.73832 3.36301 4.05108 2.05025C5.36383 0.737498 7.14431 9.54069e-10 9.00082 9.54067e-10V9.54067e-10ZM9.00082 2C7.71236 2.00007 6.47366 2.49754 5.54305 3.38866C4.61243 4.27978 4.06174 5.49575 4.00583 6.783L4.00083 7V10.764C4.00084 11.012 3.95472 11.2579 3.86483 11.489L3.78983 11.659L2.61983 14H15.3828L14.2128 11.658C14.1018 11.4363 14.033 11.1959 14.0098 10.949L14.0008 10.764V7C14.0008 5.67392 13.474 4.40215 12.5364 3.46447C11.5987 2.52678 10.3269 2 9.00082 2V2Z"
-                                            fill="#736E6E"
-                                        />
-                                    </svg>
-                                </div>
-                                <span
-                                    className="lead text-menu2"
-                                    style={{
-                                        fontSize: '1.6em',
-                                        fontWeight: '300',
-                                        color: '#736E6E',
-                                    }}
-                                >
-                                    Notificaciones
-                                </span>
-                            </div>
-                        </button>
-                    </div>
+          {/* Acceder */}
+          <button
+            onClick={openLoginModal}
+            className="flex items-center border border-gray-800 rounded px-4 py-2 hover:bg-gray-100 transition"
+          >
+            <IconList icon="userCircle" color="#000" size="lg" />
+            <span className="ml-2 text-gray-800 font-medium">Acceder</span>
+          </button>
+        </div>
+      </div>
 
-                    <div
-                        className="d-flex gap-5 main-phone-log"
-                        style={{ marginLeft: '12rem' }}
-                    >
-                        {' '}
-                        <div className="d-flex gap-5 seccion-d-none my-2">
-                            <div className="icon-briefcase">
-                                <svg
-                                    width="27"
-                                    height="26"
-                                    viewBox="0 0 27 26"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M22.1612 4.4984H20.626V3.97233C20.626 1.78218 18.9845 0 16.9645 0H10.0433C8.02584 0 6.38177 1.78218 6.38177 3.97233V4.4984H4.84403C2.17826 4.4984 0.00777949 6.86838 0.00777949 9.77516L0 10.94C0 10.9937 0.00518632 11.0447 0.00777949 11.0957V20.7152C0.00777949 23.63 2.17826 26 4.84662 26H22.1612C24.8295 26 27 23.63 27 20.7152V9.78321C27 6.86838 24.8295 4.4984 22.1612 4.4984ZM8.97753 3.97233C8.97753 3.26107 9.45726 2.68401 10.0459 2.68401H16.9671C17.5557 2.68401 18.0354 3.26376 18.0354 3.97233V4.4984H8.98012V3.97233H8.97753ZM22.1612 23.316H4.84662C3.60709 23.316 2.60094 22.1484 2.60094 20.7152V15.6692C3.37111 16.1282 4.26575 16.3939 5.23559 16.3939H21.933C22.838 16.3939 23.6808 16.1389 24.4094 15.688V20.7152C24.4094 22.1484 23.4007 23.316 22.1638 23.316H22.1612ZM24.4068 10.7011C24.4068 12.3867 23.3177 13.7099 21.9304 13.7099H5.233C3.78083 13.7099 2.67614 12.6014 2.59835 11.1118V10.4945H2.59316L2.59835 9.78321C2.59835 8.34995 3.60709 7.18241 4.84403 7.18241H22.1586C23.3981 7.18241 24.4042 8.34995 24.4042 9.78321V10.7011H24.4068Z"
-                                        fill="#736E6E"
-                                    />
-                                </svg>
-                            </div>
+      {/* --- MOBILE MENU --- */}
+      {open && (
+        <div className="sm:hidden flex flex-col items-center gap-4 pb-4 bg-[#F8F4F3] border-t border-gray-200">
 
-                            <a
-                                href="#"
-                                onClick={openRegisterModal}
-                                className=""
-                            >
-                                <span className="container">Hazte miembro</span>
-                            </a>
-                        </div>
-                        <div className="services-section seccion-d-none">
-                            <Link
-                                className="btn btn-main-post shadow-sm  bg-white"
-                                to={'/home-services'}
-                            >
-                                <span>Publicar mi servicio</span>
-                            </Link>
-                        </div>
-                        <a
-                            href="#"
-                            onClick={openRegisterModal}
-                            className="register-phone"
-                        >
-                            <span className="container">Hazte miembro</span>
-                        </a>
-                        <div className="d-flex justify-content-center">
-                            <button
-                                onClick={openLoginModal}
-                                className="btn btn-outline-dark btn-log log-phone"
-                            >
-                                <IconList
-                                    icon="userCircle"
-                                    color="#000"
-                                    size="lg"
-                                />
-                                <span className="mx-2 ">Acceder</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    )
-}
+          <button className="flex items-center gap-2 text-gray-600">
+            <Search className="w-5 h-5" />
+            <span className="text-lg font-light">Búsqueda</span>
+          </button>
 
-export default Menu
+          <button className="flex items-center gap-2 text-gray-600">
+            <Bell className="w-5 h-5" />
+            <span className="text-lg font-light">Notificaciones</span>
+          </button>
+
+          <button
+            onClick={openRegisterModal}
+            className="text-gray-700 hover:text-gray-900 font-light"
+          >
+            Hazte miembro
+          </button>
+
+          <button
+            onClick={openLoginModal}
+            className="flex rounded items-center border border-gray-800 px-4 py-2 hover:bg-gray-100 transition"
+          >
+            <IconList icon="userCircle" color="#000" size="lg" />
+            <span className="ml-2 text-gray-800 font-medium">Acceder</span>
+          </button>
+        </div>
+      )}
+    </nav>
+  );
+};
+
+export default Menu;
