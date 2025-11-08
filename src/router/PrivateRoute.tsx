@@ -1,5 +1,4 @@
 import { Navigate, Outlet, useLocation } from 'react-router-dom'
-import Menu2 from '../components/Menu2'
 import PrivateModals from '../pages/PrivateModals'
 import ProfileImg from '../components/ProfileImg'
 import Footer from '../components/Footer'
@@ -16,7 +15,6 @@ const PrivateRoute = ({ isAuthenticated }: privateRoute): JSX.Element => {
         if (path === '/home') {
             return (
                 <>
-                    <Menu2 />
                     <Outlet />
                     <PrivateModals />
                     <Footer />
@@ -29,7 +27,6 @@ const PrivateRoute = ({ isAuthenticated }: privateRoute): JSX.Element => {
         if (path === '/register-data')
             return (
                 <>
-                    <Menu2 />
                     <ProfileImg />
                     <PrivateModals />
                     <Footer />

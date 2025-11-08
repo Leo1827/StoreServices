@@ -24,7 +24,7 @@ const Menu = (): JSX.Element => {
         <Link to="/" className="flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 100 100"
+            viewBox="0 0 250 100"
             className="w-18 h-8 text-gray-800"
             fill="none"
             stroke="currentColor"
@@ -36,6 +36,7 @@ const Menu = (): JSX.Element => {
             <path d="M34 34c0-11 8-18 22-18s22 7 22 18" />
             <path d="M45 62h30" />
           </svg>
+          <span className="mx-8 absolute">DeUna</span>
         </Link>
 
         {/* --- BOTÓN PUBLICAR SERVICIO --- (centro en móvil) */}
