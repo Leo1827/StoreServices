@@ -25,7 +25,7 @@ const Menu = (): JSX.Element => {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 250 100"
-            className="w-18 h-8 text-gray-800"
+            className="w-18 h-8"
             fill="none"
             stroke="currentColor"
             strokeWidth="6"
@@ -58,23 +58,23 @@ const Menu = (): JSX.Element => {
         {/* --- DESKTOP MENU --- */}
         <div className="hidden sm:flex items-center gap-10">
           {/* Búsqueda */}
-          <button className="flex items-center gap-2 text-gray-600 hover:text-gray-800 transition">
+          <button className="flex items-center gap-2 hover:text-[#F59F27] transition">
             <Search className="w-5 h-5" />
             <span className="text-lg font-light">Búsqueda</span>
           </button>
 
           {/* Notificaciones */}
-          <button className="flex items-center gap-2 text-gray-600 hover:text-gray-800 transition">
+          <button className="flex items-center gap-2 hover:text-[#F59F27] transition">
             <Bell className="w-5 h-5" />
             <span className="text-lg font-light">Notificaciones</span>
           </button>
 
           {/* Hazte miembro */}
-          <div className="flex items-center gap-2">
-            <Briefcase className="w-6 h-6 text-gray-600" />
+          <div className="flex items-center gap-2 hover:text-[#F59F27]">
+            <Briefcase className="w-6 h-6" />
             <button
               onClick={openRegisterModal}
-              className="text-gray-700 hover:text-gray-900 font-light"
+              className="font-light"
             >
               Hazte miembro
             </button>
@@ -114,10 +114,10 @@ const Menu = (): JSX.Element => {
 
           <button
             onClick={openLoginModal}
-            className="flex rounded items-center border border-gray-800 px-4 py-2 hover:bg-gray-100 transition"
+            className="flex rounded items-center border border-gray-800 px-4 py-2 transition hover:text-[#F59F27]"
           >
             <IconList icon="userCircle" color="#000" size="lg" />
-            <span className="ml-2 text-gray-800 font-medium">Acceder</span>
+            <span className="ml-2 font-medium">Acceder</span>
           </button>
         </div>
       )}
