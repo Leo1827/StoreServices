@@ -21,14 +21,6 @@ const Home = (): JSX.Element => {
                         title={'comida y barra.'}
                         prevTitle={'Lo mas popular de '}
                     />
-                    <SectionCard
-                        title={'Foto y video.'}
-                        prevTitle={'Lo mas popular de '}
-                    />
-                    <SectionCard
-                        title={'Música.'}
-                        prevTitle={'Lo mas popular de '}
-                    />
                 </div>
             </div>
         </>
