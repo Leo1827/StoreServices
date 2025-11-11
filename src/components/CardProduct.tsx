@@ -57,7 +57,7 @@ const CardProduct = (): JSX.Element => {
 
         {/* Icono favorito */}
         <div className="absolute top-3 right-3 bg-black/40 rounded-full p-2">
-          <IconList icon="favorite" color="#fff" size="" />
+          <IconList icon="favorite" color="#fff" size="lg" />
         </div>
 
         {/* Tooltip o etiqueta */}
