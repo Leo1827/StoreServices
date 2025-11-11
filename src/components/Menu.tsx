@@ -19,7 +19,7 @@ const Menu = (): JSX.Element => {
 
   return (
     <nav className="w-full bg-[#FCFCFA] border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 flex items-center justify-between py-3">
+      <div className="max-w-7xl mx-auto px-4 flex items-center justify-between py-2">
         {/* --- LOGO --- */}
         <Link to="/" className="flex items-center gap-2">
           <svg
