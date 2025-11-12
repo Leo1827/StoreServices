@@ -10,83 +10,79 @@ const CardProduct = (): JSX.Element => {
 
   const [current, setCurrent] = useState(0)
 
-  const nextSlide = () => {
-    setCurrent((prev) => (prev + 1) % images.length)
-  }
-
-  const prevSlide = () => {
-    setCurrent((prev) => (prev - 1 + images.length) % images.length)
-  }
+  const nextSlide = () => setCurrent((prev) => (prev + 1) % images.length)
+  const prevSlide = () => setCurrent((prev) => (prev - 1 + images.length) % images.length)
 
   return (
-    <div className="w-full max-w-sm bg-white rounded-3xl shadow-md overflow-hidden mx-auto my-6 transition-transform hover:scale-[1.02]">
-      {/* 🔹 Carrusel */}
-      <div className="relative w-full h-50 sm:h-64 overflow-hidden">
+    <div className="w-full max-w-[320px] bg-white rounded-2xl shadow-md overflow-hidden mx-auto hover:shadow-lg transition-all duration-300 hover:scale-[1.01]">
+      {/* 🔹 Imagen / Carrusel */}
+      <div className="relative w-full h-48 sm:h-52">
         <img
           src={images[current]}
           alt="Producto"
-          className="w-full h-full object-cover transition-all duration-500 rounded-t-3xl"
+          className="w-full h-full object-cover transition-all duration-500"
         />
 
-        {/* Flechas */}
-        <button
-          onClick={prevSlide}
-          className="absolute top-1/2 left-3 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full"
-        >
-          ‹
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute top-1/2 right-3 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full"
-        >
-          ›
-        </button>
-
         {/* Indicadores */}
-        <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-2">
+        <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1.5">
           {images.map((_, i) => (
             <div
               key={i}
               onClick={() => setCurrent(i)}
-              className={`w-2.5 h-2.5 rounded-full cursor-pointer ${
+              className={`w-2 h-2 rounded-full cursor-pointer transition ${
                 current === i ? "bg-yellow-500" : "bg-white/50"
               }`}
             />
           ))}
         </div>
 
+        {/* Flechas */}
+        <button
+          onClick={prevSlide}
+          className="absolute top-1/2 left-2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white px-2 py-1 rounded-full text-sm"
+        >
+          ‹
+        </button>
+        <button
+          onClick={nextSlide}
+          className="absolute top-1/2 right-2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white px-2 py-1 rounded-full text-sm"
+        >
+          ›
+        </button>
+
         {/* Icono favorito */}
-        <div className="absolute top-3 right-3 bg-black/40 rounded-full p-2">
-          <IconList icon="favorite" color="#fff" size="lg" />
+        <div className="absolute top-2 right-2 bg-black/40 p-1.5 rounded-full">
+          <IconList icon="favorite" color="#fff" size="sm" />
         </div>
 
-        {/* Tooltip o etiqueta */}
-        <div className="absolute top-3 left-3 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-semibold shadow">
+        {/* Etiqueta */}
+        <div className="absolute top-2 left-2 bg-yellow-500 text-white px-2.5 py-0.5 rounded-full text-xs font-semibold shadow">
           Taquiza
         </div>
       </div>
 
-      {/* 🔹 Descripción */}
-      <div className="p-4">
-        <div className="relative flex items-start">
+      {/* 🔹 Contenido */}
+      <div className="p-3">
+        {/* Descripción */}
+        <div className="flex items-start gap-2">
           <img
             src="./Images/symbol-list.png"
             alt=""
-            className="w-7 h-7 absolute left-0 top-1"
+            className="w-5 h-5 mt-1 opacity-80"
           />
-          <p className="ml-9 text-gray-700 text-sm font-medium leading-snug">
-            Lorem ipsum dolor sit amet, sed do consectet
+          <p className="text-gray-600 text-xs leading-tight">
+            Lorem ipsum dolor sit amet, sed do consectet.
           </p>
         </div>
 
-        {/* 🔹 Título + Check */}
-        <div className="flex items-center justify-between mt-3">
-          <span className="text-gray-800 font-semibold text-sm sm:text-base">
+        {/* Título */}
+        <div className="flex items-center justify-between mt-2">
+          <span className="text-gray-900 font-semibold text-sm">
             Tacos “El tamal”
           </span>
           <svg
-            width="18"
-            height="18"
+            width="16"
+            height="16"
             viewBox="0 0 101 101"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -98,12 +94,12 @@ const CardProduct = (): JSX.Element => {
           </svg>
         </div>
 
-        {/* 🔹 Precio y botón */}
-        <div className="mt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <span className="text-gray-900 text-base sm:text-lg font-semibold">
-            $ <b>+100.00 COP</b>
+        {/* Precio + Botón */}
+        <div className="mt-3 flex items-center justify-between">
+          <span className="text-gray-900 text-sm font-semibold">
+            <b>$100.00</b> COP
           </span>
-          <button className="bg-yellow-500 hover:bg-yellow-600 text-white text-sm sm:text-base px-5 py-2 rounded transition">
+          <button className="bg-yellow-500 hover:bg-yellow-600 text-white text-xs font-medium px-4 py-1.5 rounded">
             Ver perfil
           </button>
         </div>

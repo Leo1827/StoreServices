@@ -1,6 +1,5 @@
 import ButtonCategories from '../components/ButtonCategories'
 import CarouselCategories from '../components/CarouselCategories'
-// import MenuPhone from '../components/MenuPhone'
 import SectionCard from '../components/SectionCard'
 
 const Home = (): JSX.Element => {
@@ -14,7 +13,7 @@ const Home = (): JSX.Element => {
                 </div>
 
                 <div
-                    className="mx-md-2 px-md-4 px-sm-4 mt-5 container-product"
+                    className="mx-md-2 px-md-4 px-sm-4 my-5"
                     id="home"
                 >
                     <SectionCard
