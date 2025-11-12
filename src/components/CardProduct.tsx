@@ -103,7 +103,7 @@ const CardProduct = (): JSX.Element => {
           <span className="text-gray-900 text-base sm:text-lg font-semibold">
             $ <b>+100.00 COP</b>
           </span>
-          <button className="bg-yellow-500 hover:bg-yellow-600 text-white text-sm sm:text-base px-5 py-2 rounded-xl transition">
+          <button className="bg-yellow-500 hover:bg-yellow-600 text-white text-sm sm:text-base px-5 py-2 rounded transition">
             Ver perfil
           </button>
         </div>
