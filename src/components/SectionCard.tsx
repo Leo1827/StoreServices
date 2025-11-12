@@ -17,13 +17,13 @@ const SectionCard = ({ title, prevTitle, style }: any): JSX.Element => {
                 </button>
             </div>
 
-            <div className="container-card px-4 py-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
-                <CardProduct />
-                <CardProduct />
-                <CardProduct />
-                <CardProduct />
-            </div>
+            <div className="container px-4 py-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
+                    <CardProduct />
+                    <CardProduct />
+                    <CardProduct />
+                    <CardProduct />
+                </div>
             </div>
 
         </div>
