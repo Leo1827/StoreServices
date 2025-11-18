@@ -5,7 +5,7 @@ import SectionCard from '../components/SectionCard'
 const Home = (): JSX.Element => {
     return (
         <>
-            <div style={{ backgroundColor: '#F8F4F3' }} className="home-scroll">
+            <div style={{ backgroundColor: '#FCFCFA' }} className="home-scroll">
                 <CarouselCategories />
 
                 <div className="py-6">

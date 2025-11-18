@@ -48,7 +48,7 @@ const CarrouselCategories = (): JSX.Element => {
   }
 
   return (
-    <section className="w-full bg-white py-2 border-b border-gray-100">
+    <section className="w-full bg-[#FCFCFA] py-2 border-b border-gray-100">
       <div className="max-w-[1400px] mx-auto relative">
         {/* 🔹 Flecha Izquierda */}
         <button
