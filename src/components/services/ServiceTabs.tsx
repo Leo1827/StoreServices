@@ -113,12 +113,12 @@ const ServiceTabs = () => {
             </div>
 
             {/* CONTENIDO */}
-            <div className="flex justify-center pt-10 px-4">
+            <div className="flex justify-center px-4">
                 <div
                     className="
                         bg-white shadow-lg rounded-[20px]
                         w-full max-w-[1100px]
-                        min-h-[650px] p-6
+                        min-h-[650px] p-2
                     "
                 >
                     <TabsContent step={step} />
