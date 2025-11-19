@@ -2,8 +2,9 @@ import { Route, Routes, Navigate } from 'react-router'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { useAppDispatch, useAppSelector } from '../hooks/reduxHook'
 import Home from '../pages/Home'
+import Services from '../components/services/ServiceTabs'
+
 import LandingPages from '../pages/LandingPages'
-import HomeServices from '../components/HomeServices'
 import PublicRoute from './PublicRoute'
 import PrivateRoute from './PrivateRoute'
 import VerifyEmail from '../pages/register/VerifyEmail'
@@ -197,7 +198,7 @@ const AppRouter = (): JSX.Element => {
                     {/* Aqui van las rutas publicas */}
                     <Route path="/" element={<Home />} />
                     <Route path="landingPage" element={<LandingPages />} />
-                    <Route path="home-services" element={<HomeServices />} />
+                    <Route path="services" element={<Services />} />
                     <Route path="category/:id" element={<CategoryPage />} />
                     <Route path="verifiedEmail" element={<VerifiedEmail />} />
                     <Route
@@ -235,7 +236,7 @@ const AppRouter = (): JSX.Element => {
                 >
                     {/* Aqui van las rutas privadas */}
                     <Route path="/home" element={<Home />} />
-                    <Route path="/home-services" element={<HomeServices />} />
+                    <Route path="/services" element={<Services />} />
                     <Route path="/register-data" element={<ProfileImg />} />
                     <Route path="category/:id" element={<CategoryPage />} />
                     <Route

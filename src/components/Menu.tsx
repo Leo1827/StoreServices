@@ -41,7 +41,7 @@ const Menu = (): JSX.Element => {
 
         {/* --- BOTÓN PUBLICAR SERVICIO --- (centro en móvil) */}
         <Link
-          to="/home-services"
+          to="/services"
           className=" sm:block border border-[#F6E9DA] bg-white text-gray-700 font-medium px-4 py-2 rounded-lg shadow-sm hover:bg-[#F6E9DA]/30 transition"
         >
           Consultar servicios
