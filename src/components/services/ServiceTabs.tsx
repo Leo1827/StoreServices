@@ -6,7 +6,7 @@ const ServiceTabs = () => {
     const [step, setStep] = useState("Step 1")
 
     const activeTab =
-        "bg-[#FFFFFF] text-[#F9A823] shadow-md py-3"
+        "bg-[#FFFFFF] text-[#F9A823] shadow-md py-6"
 
     const normalTab =
         "text-black hover:bg-[#f7f3f3] transition-all py-3"
@@ -78,7 +78,7 @@ const ServiceTabs = () => {
                             type="button"
                             className="
                                 hidden md:flex
-                                bg-yellow-500 text-white px-3 py-1 ml-8 rounded-[100px]
+                                bg-yellow-500 text-white px-3 ml-10 rounded-[100px]
                                 items-center
                                 text-[1rem]
                                 shadow-md hover:shadow-lg
